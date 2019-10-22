@@ -1,0 +1,22 @@
+{
+  "name": "yvbot",
+  "version": "1.0.0",
+  "description": "Let's make Discord bot",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoovin/YVbot.git"
+  },
+  "author": "Yoovin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yoovin/YVbot/issues"
+  },
+  "homepage": "https://github.com/yoovin/YVbot#readme",
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  }
+}
