@@ -1,0 +1,23 @@
+{
+  "name": "yvbot",
+  "version": "1.0.0",
+  "description": "Let's make Discord bot",
+  "main": "bot.js",
+  "scripts": {
+    "start":"pm2 start bot.js --watch" ,
+    "stop": "pm2 stop bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoovin/YVbot.git"
+  },
+  "author": "Yoovin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yoovin/YVbot/issues"
+  },
+  "homepage": "https://github.com/yoovin/YVbot#readme",
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  }
+}
