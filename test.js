@@ -1,1 +1,0 @@
-console.log(`./img/beautyburger/파란거.png`)
