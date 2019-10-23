@@ -4,7 +4,7 @@
   "description": "Let's make Discord bot",
   "main": "bot.js",
   "scripts": {
-    "start":"pm2 start bot.js --watch" ,
+    "start": "pm2 start bot.js --watch",
     "stop": "pm2 stop bot.js"
   },
   "repository": {
@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/yoovin/YVbot#readme",
   "dependencies": {
-    "discord.js": "^11.5.1"
+    "discord.js": "^11.5.1",
+    "discord.js-commando": "^0.10.0",
+    "ffmpeg-static": "^2.7.0",
+    "node-opus": "^0.3.3",
+    "simple-youtube-api": "^5.2.1",
+    "ytdl-core": "^1.0.0"
   }
 }
