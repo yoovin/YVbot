@@ -25,6 +25,12 @@ var sarang = async (msg) => {
     await msg.channel.send(new Attachment(sarang[5]))
     await msg.channel.send(new Attachment(sarang[6]))
 }
+
+var pro1 = (func) => {
+    return new Promise((res, rej)=>{
+        res(func)
+    })
+}
 var proSarang = (msg) => {
     pro1 = new Promise ((res, rej) => {
         if (msg){
@@ -57,15 +63,15 @@ client.on('message', (msg) => {
 })
 
 client.on('message', (msg) => {
-    if(msg.content === '파란색' ||
-        msg.content === "노란색" ||
-        msg.content === "초록색" ||
-        msg.content ===  "주황색" ||
-        msg.content === "보라색" ||
-        msg.content === "빨간색" ||
-        msg.content === "전부다줘"){
-        const attachment = new Attachment(`./img/beautyburger/${msg}.png`)
-        msg.channel.send(attachment)
+    if(msg.content === "$comein"){
+        msg.member.voiceChannel.join()
+        .then(connection => {
+            connection.playFile('./music/무릉.mp3').setVolume(0.1)
+        })
+    }else if(msg.content === "$out"){
+        msg.member.voiceChannel.leave()
+    }else if(msg.content === "$youtube"){
+        msg.channel.send("원하는 url")
     }
 })
 

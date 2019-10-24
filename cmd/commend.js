@@ -33,6 +33,11 @@ var commend = {
     yong: (msg) => {
         const attachment = new Attachment("./img/ddungi.jpeg")
         msg.channel.send("저...두...그렇게...생각해요오...궤ㅔ에//", attachment)
+    },
+
+    burger: (msg) => {
+        const attachment = new Attachment(`./img/beautyburger/${msg}.png`)
+        msg.channel.send(attachment)
     }
 }
 
